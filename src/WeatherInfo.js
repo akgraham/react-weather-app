@@ -9,7 +9,7 @@ export default function WeatherInfo(props) {
       <h2><FormattedDate date={props.data.date} /></h2>
         <h1>{props.data.city}</h1>
         <WeatherTemperature fahrenheit={props.data.temperature}/>
-          <WeatherIcon code={props.data.icon} alt={props.data.description} />
+          <WeatherIcon code={props.data.icon} size={100} alt={props.data.description} />
         <ul>
           <li className="text-capitalize">{props.data.description}</li>
           <br />
